@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSA 3072-bit Sign Up</title>
+    <link rel="stylesheet" href="css/3072.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Secure Sign Up</h1>
+      <p class="subtitle">RSA 3072-bit Encryption</p>
+
+      <div id="signup">
+        <h2>Sign Up</h2>
+        <label for="signupName">Full Name</label>
+        <input type="text" id="signupName" placeholder="Enter Full Name" />
+        <label for="signupUname">Username</label>
+        <input type="text" id="signupUname" placeholder="Enter Username" />
+        <label for="signupBday">Date of Birth</label>
+        <input type="date" id="signupBday" />
+
+        <label for="signupYear">Year Level</label>
+        <select id="signupYear">
+          <option value="">Select Year Level</option>
+          <option value="1st Year">1st Year</option>
+          <option value="2nd Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+        </select>
+
+        <label for="signupGender">Gender</label>
+        <select id="signupGender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="signupPword">Password</label>
+        <input type="password" id="signupPword" placeholder="Enter Password" />
+        <button id="signupButton" onclick="signUp()" disabled>Sign Up</button>
+
+        <div id="signup-message" class="message"></div>
+      </div>
+
+      <div class="result-box">
+        <h2>RSA 3072-bit Encrypted Data</h2>
+        <pre id="encryptedData">No data encrypted yet.</pre>
+      </div>
+
+      <div class="result-box">
+        <h2>RSA 3072-bit Decrypted Data</h2>
+
+        <pre id="decryptedData">No data decrypted yet.</pre>
+      </div>
+    </div>
+
+    <script src="js/3072.js"></script>
+  </body>
+</html>
